@@ -18,7 +18,8 @@ url="https://doi.org/10.1007/978-3-540-74440-5_1"
   note = {Abgerufen am: 23.12.2018},
   url  = {https://www.polizei.bremen.de/},
 }
-@Online{APariConsulting,
+
+@Online{fleet3.0,
   note = {Abgerufen am: 23.12.2018},
   url  = {https://apari.de/sites/default/files/downloads/com_0815_s076_081.pdf},
 }
@@ -56,6 +57,16 @@ url="https://doi.org/10.1007/978-3-540-74440-5_1"
   pages   = {pages 335-344},
   month   = apr,
   url     = {https://doi.org/10.1016/j.chb.2014.12.019},
+}
+
+@Online{APariConsulting,
+  note = {Abgerufen am: 23.12.2018},
+  url  = {https://www.date-up.com/my-date-up/wissenswertes/unterteilung-in-sap/},
+}
+
+@Online{SAPModule,
+  note = {Abgerufen am: 23.12.2018},
+  url  = {https://www.s-und-n.de/produkte/sap-addons/fleet/},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
