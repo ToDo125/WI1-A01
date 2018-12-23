@@ -18,6 +18,10 @@ url="https://doi.org/10.1007/978-3-540-74440-5_1"
   note = {Abgerufen am: 23.12.2018},
   url  = {https://www.polizei.bremen.de/},
 }
+@Online{APariConsulting,
+  note = {Abgerufen am: 23.12.2018},
+  url  = {https://apari.de/sites/default/files/downloads/com_0815_s076_081.pdf},
+}
 
 @InBook{Foerster2008,
   pages     = {117--152},
@@ -49,7 +53,7 @@ url="https://doi.org/10.1007/978-3-540-74440-5_1"
   journal = {Computers in Human Behavior},
   year    = {2015},
   volume  = {45},
-  pages   = {p335-344},
+  pages   = {pages 335-344},
   month   = apr,
   url     = {https://doi.org/10.1016/j.chb.2014.12.019},
 }
