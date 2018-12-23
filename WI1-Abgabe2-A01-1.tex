@@ -81,12 +81,32 @@
 
 \section*{Aufgabe 2.1}
 \addcontentsline{toc}{section}{Aufgabe 2.1}
+\subsection*{\label{sub:thema}1. Probleme der dezentralen Lösung}
+\addcontentsline{toc}{subsection}{1. Probleme der dezentralen Lösung}
 
-\subsection*{2.1.1}
-\addcontentsline{toc}{subsection}{1.}
+Um die Probleme welche das dezentrale System dem Bremer Polizeipräsidium verursacht zu verstehen muss man erstmal seinen Aufbau kennen. Aktuell besitz jede Abteilung, oder zumindest jede genannte, ihr eigenens IT-System. Das bedeuted entweder ein stark personalisiertes oder sogar selbst entwickeltes System. 
 
-\subsection*{2.1.2}
-\addcontentsline{toc}{subsection}{2.}
+Diese Insellösungen sorgen für eine ganze Menge Probleme. Vor allem wenn man das jetzige System mit einem zentralisierten IT-System vergleicht. 
+Das erste und offensichtlichste Problem ist die kompatibilität der einzelnen Systeme. Also der Datenaustasch zwischen den einzelene Abteilungen des Polizeipräsidiums. Durch die wahrscheinlich stark unterschiedlichen Systeme ist es nicht unbedingt gewährleistet das diese miteinander kompatibel sind und dadurch effizient Daten zwischen den einzelnen Abteilungen ausgetauscht werden können (wenn dies überhaupt ohne Umweg möglich ist).
+
+Dies führt gleichzeitig natürlich auch zu einem erhöhten Administrationsaufwand um die unterschiedlichen Systeme am laufen zu halten. Da viele verschiedenen IT-Systeme gibt wird eine größere Anzahl an Administratoren gebraucht welche sich auch noch  mit vielen verschiedenen Systemen auskennen müssen. Dies führt wahrscheinlisch zu höheren Personalkosten als auch zu mehr Ausfällen als wenn es ein zentrales IT-System geben würde.
+
+Ein weiterer nicht zu vernachlässigender Punkt ist die Sicherheit welche durch die große Anzahl an verschiedenen System natürlich ebenfalls beeinträchtigt ist. Im vergleich zu einem zentralen System ist es bei den vielen verschiedenen Abteilungssystemen schwieriger einen einheitlichen Sicherheitsstandard einzuhalten.
+
+Ein Problem welches schon bei der Administration angesprochen wurde ist die Ausfallsicherheit eines solchen dezentralen Systems. Durch die verschiedenen Syteme und dadurch auch verteilte Aufmerksamkeit der Administratoren auf dei verschiedenen Syteme ist es natürlich schwieriger eine große Anzahl von Systemen 24/7 am laufen zu halten als ein Sytem welches die ungeteilte Aufmerksamgeit aller Administratoren genießt.
+
+
+\subsection*{\label{sub:thema}2. Sytemlandkarte mit Sollkonzept}
+\addcontentsline{toc}{subsection}{2. Sytemlandkarte mit Sollkonzept}
+
+Grundlegend werden bei deisem Konzept alle Abteilungen mit allen verbunden. Es entsteht ein zentrales Serversystem und eine zentrale Datenbank oder zumindest zetral zugängliche Datenbanken für die normal anfallenden Daten. Für besonders vertrauliche Daten wie z.B. Einstzpläne oder die Liste der aktuell sich in Polizeigewahrsam befindenden Personen wird eine externe Datenbank angelegt auf welche nur von den jeweiligen Abteilungen zugegriffen werden kann.
+
+Durch die zentrale Infrastruktur um die zentrale Datenbank herum können Schnittstellen zwischen den einzelnen Abteilungen relativ einfach realisiert werden. Dies ist auch wichtig, da es zwischen so gut wie allen Abteilungen auch Schnittstellen benötigt werden. 
+
+
+\includepdf[pages=1]{NetworkDiagram.pdf}
+
+
 
 \subsection*{2.1.3}\label{Aufgabe 2.1.3}
 \addcontentsline{toc}{subsection}{3. ERP-Module für Polizei Bremen}
