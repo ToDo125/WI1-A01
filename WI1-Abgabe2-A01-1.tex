@@ -1,0 +1,121 @@
+\documentclass[12pt,utf8]{scrartcl}
+\usepackage[ngerman]{babel}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,	
+	linkcolor=blue,     
+	citecolor=blue,     
+	filecolor=blue,     
+	urlcolor=blue     	
+}
+\usepackage{etoolbox}
+\apptocmd{\UrlBreaks}{\do\-\do\%\do\.}{}{}
+\usepackage[ngerman]{varioref}
+\usepackage{amsmath,amssymb,latexsym,amsfonts,amsthm,amsbsy,qtree}
+\usepackage{url}
+\usepackage[printonlyused]{acronym}
+\usepackage[utf8]{inputenc} 
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{fancyhdr}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage[justification=centering]{caption}
+\usepackage[numbers]{natbib}
+\bibliographystyle{plainnat}
+\usepackage{pdfpages}
+
+\newcommand{\teilnehmerI}{Tom Dombeck}
+\newcommand{\mattI}{4510671} 
+\newcommand{\mailI}{todo@uni-bremen.de}
+\newcommand{\teilnehmerII}{Andreas Schwarz}
+\newcommand{\mattII}{4250572}
+\newcommand{\mailII}{andreas4@uni-bremen.de}
+\newcommand{\teilnehmerIII}{Lasse Warnke}
+\newcommand{\mattIII}{4515161}
+\newcommand{\mailIII}{lwarnke@uni-bremen.de}
+\newcommand{\thisgroup}{A01}
+\newcommand{\abgabedatum}{23.12.2018}
+\newcommand{\nummer}{2}
+\newcommand{\thema}{Integrierte Anwendungssysteme, Big Data}
+\newcommand{\thistutor}{Tim Haß}
+\newcommand{\thissemester}{WiSe 2018/19}
+\newcommand{\thiscourse}{Wirtschaftsinformatik 1}
+\newcommand{\thisshortcourse}{WI1}
+
+\pagestyle{fancy}
+\fancyhead{} 												
+\fancyhead[LO,RE]{\thissemester \\ \thisshortcourse} 
+\fancyhead[RO,LE]{TutorIn: \thistutor \\ Gruppe: \thisgroup }
+\fancyfoot{} 											
+\cfoot{\thepage} 										
+\setlength{\headsep}{2cm} 								
+
+\begin{document}
+\begin{titlepage}
+	\vspace*{\baselineskip}		
+	\centering					
+	\LARGE							
+	\thiscourse \\ 					
+	\vspace{1cm}					
+	{\Huge 							
+	\textbf{Abgabe \nummer: \thema}} \\ 
+	\vspace{1.5cm} 					
+	TutorIn: \thistutor \\ 		
+	\abgabedatum \\ 				
+	\vfill 							
+	Gruppe: \thisgroup \\ 			
+	\vspace{.5cm} 					
+	\large 							
+	\begin{tabular}{c|c|c} 		
+	\teilnehmerI	& \teilnehmerII & \teilnehmerIII \\ 
+	\mattI	& \mattII &  \mattIII\\ 
+	\mailI	& \mailII & \mailIII \\ 
+	\end{tabular} 
+\end{titlepage}
+
+\thispagestyle{empty}
+\tableofcontents
+\newpage
+\setcounter{page}{1}
+
+\section*{Aufgabe 2.1}
+\addcontentsline{toc}{section}{Aufgabe 2.1}
+
+\subsection*{2.1.1}
+\addcontentsline{toc}{subsection}{1.}
+
+\subsection*{2.1.2}
+\addcontentsline{toc}{subsection}{2.}
+
+\subsection*{2.1.3}\label{Aufgabe 2.1.3}
+\addcontentsline{toc}{subsection}{3. ERP-Module für Polizei Bremen}
+
+ERP-Systeme sind modular aufgebaut und somit an einzelne Kunden besser individuell anpassbar. Moderne ERP-Systeme umfassen oft eine große Zahl an Funktionsbereichen oder Modulen. 
+
+- Fundsachenverwaltung -> 
+- Personalverwaltung -> Personalwirtschaft
+- Einsatzleitung -> 
+- Materialverwaltung -> 
+- Polizeigewahrsam -> 
+- Reviermanagement -> 
+- Budgetverwaltung -> Finanz- und Rechnungswesen
+- Bewerbungsverwaltung -> 
+- Fuhr- und Parkplatzverwaltung -> 
+- Einkauf und Beschaffung -> 
+
+\subsection*{2.1.4}
+\addcontentsline{toc}{subsection}{4. Einführung eines ERP-Systems für die Polizei Bremen}
+
+Es gibt verschiedene Herangehensweisen um ein ERP-System neu in ein Unternehmen einzuführen. Man kann entweder schrittweise vorgehen oder man macht einen sogenannten "Big Bang", bei dem man das komplette System an einem Stichtag einführt. Natürlich haben beide Varianten ihre Vor- und Nachteile. So müssen bei einer schrittweisen Einführung die alten Systeme und das neue ERP-System temporäre Schnittstellen haben, damit alle Systeme weiterhin funktionieren. Dies ist bei einem "Big Bang" natürlich nicht nötig, da alle alten Systeme auf einen Schlag ersetzt werden. Auf der anderen Seite muss die Umstellung auf ein anderes System natürlich vorbereitet werden. Alle Mitarbeiter müssen z.B. geschult und mit dem neuen System vertraut gemacht werden. Dies ist natürlich einfacher, wenn man ein System nur nach und nach z.B. an verschiedenen geographischen Standorten oder nach Modulen geordnet einführt, da man so eine kleinere Anzahl an Leuten zur gleichen Zeit schulen muss\cite{Jacob2008}. 
+
+Für die Polizei Bremen würden wir ein schrittweise eingeführtes ERP-System empfehlen, weil es sich mit rund 2.500 Angestellten um ein recht großes "Unternehmen" handelt, das zudem weit über das Land Bremen verstreut ist\cite{PolizeiBremen}. 
+
+Da alle Geschäftsprozesse, die unterstützt werden sollen, und somt auch alle ERP-Module, die für die Polizei Bremen in Frage kommen, schon geklärt sind (siehe Aufgabe 2.1.2 und 2.1.3), ist der erste Schritt auf dem Weg zur Einführung eines ERP-Systems schon gemacht. 
+
+\newpage
+\begin{flushleft}
+\addcontentsline{toc}{section}{Literaturverzeichniss}
+\bibliography{Literaturdatenbank}
+\end{flushleft}
+\end{document}
